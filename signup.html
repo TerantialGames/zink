@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zink - Create Account</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        /* Top Banner */
+        .top-bar {
+            width: 100%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 60px;
+            font-weight: 900;
+            color: #f5d000;
+            text-shadow: 0 0 25px #f5d000;
+            letter-spacing: 3px;
+        }
+
+        .sign-in-btn {
+            background: #f5d000;
+            color: black;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 10px 30px;
+            border-radius: 12px;
+            border: 3px solid #f5d000;
+            cursor: pointer;
+            box-shadow: 0 0 18px #f5d000;
+        }
+
+        .glow-line {
+            width: 100%;
+            height: 4px;
+            background: #f5d000;
+            box-shadow: 0 0 25px #f5d000;
+        }
+
+        /* Card */
+        .card {
+            background: #111;
+            width: 90%;
+            max-width: 420px;
+            margin: 80px auto;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 0 25px rgba(245, 208, 0, 0.25);
+            text-align: center;
+        }
+
+        .card h1 {
+            font-size: 34px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #f5d000;
+            text-shadow: 0 0 15px #f5d000;
+        }
+
+        .input {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 2px solid #444;
+            background: #1a1a1a;
+            color: white;
+            font-size: 16px;
+        }
+
+        .input:focus {
+            border-color: #f5d000;
+            box-shadow: 0 0 10px #f5d000;
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 16px;
+            background: #f5d000;
+            color: black;
+            font-size: 20px;
+            font-weight: 800;
+            border-radius: 12px;
+            border: 3px solid #f5d000;
+            cursor: pointer;
+            box-shadow: 0 0 25px #f5d000;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner -->
+    <div class="top-bar">
+        <div class="logo">ZINK</div>
+        <button class="sign-in-btn" onclick="location.href='signin.html'">Sign In</button>
+    </div>
+
+    <div class="glow-line"></div>
+
+    <!-- Card Form -->
+    <div class="card">
+        <h1>Create Account</h1>
+
+        <input class="input" type="email" placeholder="Email" required />
+        <input class="input" type="text" placeholder="Username" required />
+        <input class="input" type="password" placeholder="Password" required />
+        <input class="input" type="password" placeholder="Confirm Password" required />
+
+        <button class="submit-btn">Create Account</button>
+    </div>
+
+</body>
+</html>
